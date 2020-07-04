@@ -58,3 +58,9 @@ a:hover {
   background-color: #8155FF;
   padding: 10vh;
 }
+.banner {
+  align-content: center;
+  display: none;
+  justify-content: center;
+  width: 100%;
+}
