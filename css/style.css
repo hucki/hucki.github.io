@@ -10,10 +10,10 @@ ul {
   list-style: none;
 }
 ul > li {
-  display: inline-block;
+  /* display: inline-block; */
 }
 a {
-  color: white;
+  color: #99ccff;
   text-decoration: none;
 }
 a:hover {
@@ -34,13 +34,14 @@ a:hover {
   padding: 10px;
   width: 100vw;
   height: 10vh;
-  background-color: #240480;
+  color: #8155FF;
+  background-color: #99ccff;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .main-content {
   display: flex;
   width: 100vw;
-  background-color: #4908FF;
+  background-color: #669966;
   flex-direction: row;
 }
 .main-info {
@@ -57,6 +58,8 @@ a:hover {
   height: 50vh;
   background-image: url("../images/20160707_112632_P7070414.JPG");
   background-size: cover;
+  transform: scaleX(-1);
+  background-position: right;
 }
 .footer {
   box-sizing: border-box;
@@ -64,15 +67,24 @@ a:hover {
   width: 100vw;
   height: 10vh;
   padding: 10px;
+  color: #99ccff;
   background-color: #8155FF;
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
 }
+.footer > a {
+  color: #99ccff;
+}
+.footer
+.link-list > li {
+  display: inline-block;
+}
 .alias,
 .footer-info {
+  font-size: 0.7rem;
   font-style: italic;
-  color: darkgray;
+  color: #99ccff;
 }
 .banner {
   align-content: center;
