@@ -5,8 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
   <title>Stefan Huckschlag | Portfolio</title>
+  <link rel="manifest" href="manifest.json">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Stefan Huckschlags Portfolio">
+  <meta name="apple-mobile-web-app-title" content="Stefan Huckschlags Portfolio">
+  <meta name="theme-color" content="#FF9800">
+  <meta name="msapplication-navbutton-color" content="#FF9800">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="msapplication-starturl" content="/index.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="icon" sizes="114x128" href="/images/touch/huckis_128.png">
+  <link rel="apple-touch-icon" sizes="114x128" href="/images/touch/huckis_128.png">
+  <link rel="icon" sizes="172x192" href="/images/touch/huckis_192.png">
+  <link rel="apple-touch-icon" sizes="172x192" href="/images/touch/huckis_192.png">
+  <link rel="icon" sizes="229x256" href="/images/touch/huckis_256.png">
+  <link rel="apple-touch-icon" sizes="229x256" href="/images/touch/huckis_256.png">
+  <link rel="icon" sizes="343x384" href="/images/touch/huckis_384.png">
+  <link rel="apple-touch-icon" sizes="343x384" href="/images/touch/huckis_384.png">
+  <link rel="icon" sizes="458x512" href="/images/touch/huckis_512.png">
+  <link rel="apple-touch-icon" sizes="458x512" href="/images/touch/huckis_512.png">
 </head>
 <body>
+  <section id="installBanner" class="banner">
+    <button id="installBtn">Install app</button>
+</section>
   <div class="container">
     <div class="top-bar"> </div>
     <div class="main-content">
@@ -38,5 +63,18 @@
       </div>
     </div>
   </div>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('./js/service-worker.js')
+          .then(reg => {
+            console.log('Service worker registered! 😎', reg);
+          })
+          .catch(err => {
+            console.log('😥 Service worker registration failed: ', err);
+          });
+      });
+    }
+    </script>
 </body>
 </html>
