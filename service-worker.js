@@ -1,4 +1,4 @@
-const cacheName = 'cache-v3';
+const cacheName = 'cache-v4';
 const precacheResources = [
   '/',
   '/index.html',
@@ -7,7 +7,6 @@ const precacheResources = [
   '/images/icons/icon-72x72.png',
   '/images/icons/icon-128x128.png',
   '/images/icons/icon-192x192.png',
-  '/images/icons/icon-256x256.png',
   '/images/icons/icon-384x384.png',
   '/images/icons/icon-512x512.png'
 ];
