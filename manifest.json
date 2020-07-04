@@ -3,7 +3,7 @@
   "short_name": "SH",
   "theme_color": "#240480",
   "background_color": "#4908ff",
-  "display": "browser",
+  "display": "standalone",
   "Scope": "/",
   "start_url": "/",
   "icons": [
