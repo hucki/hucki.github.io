@@ -9,23 +9,23 @@
   "icons": [
     {
       "src": "images/touch/huckis_128.png",
-      "sizes": "114x128"
+      "sizes": "128x128"
     },
     {
       "src": "images/touch/huckis_192.png",
-      "sizes": "172x192"
+      "sizes": "192x192"
     },
     {
       "src": "images/touch/huckis_256.png",
-      "sizes": "229x256"
+      "sizes": "256x256"
     },
     {
       "src": "images/touch/huckis_384.png",
-      "sizes": "343x384"
+      "sizes": "384x384"
     },
     {
       "src": "images/touch/huckis_512.png",
-      "sizes": "458x512"
+      "sizes": "512x512"
     }
   ]
 }
