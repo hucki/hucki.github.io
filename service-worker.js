@@ -1,14 +1,14 @@
-const cacheName = 'cache-v1';
+const cacheName = 'cache-v2';
 const precacheResources = [
   '/',
   '/index.html',
   '/css/style.css',
   '/images/20160707_112632_P7070414.JPG',
-  '/images/touch/huckis_128.png',
-  '/images/touch/huckis_192.png',
-  '/images/touch/huckis_256.png',
-  '/images/touch/huckis_384.png',
-  '/images/touch/huckis_512.png'
+  '/images/icons/hucki_128x128.png',
+  '/images/icons/hucki_192x192.png',
+  '/images/icons/hucki_256x256.png',
+  '/images/icons/hucki_384x384.png',
+  '/images/icons/hucki_512x512.png'
 ];
 
 self.addEventListener('install', event => {
