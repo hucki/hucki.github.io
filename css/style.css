@@ -4,7 +4,7 @@
 }
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: white;
+  color: darkslateblue;
 }
 ul {
   list-style: none;
@@ -40,9 +40,13 @@ a:hover {
 }
 .main-content {
   display: flex;
+  height: 80vh;
   width: 100vw;
-  background-color: #3F5F3F;
+  background: linear-gradient(45deg, darkslateblue, darkgray, #FFF, #FFF);
   flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 10vh;;
 }
 .main-info {
   box-sizing: border-box;
@@ -54,8 +58,11 @@ a:hover {
   flex-direction: column;
 }
 .main-image {
-  width: 50vw;
-  height: 50vh;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 10px;
+  border-color: #FFF;
   background-image: url("../images/20160707_112632_P7070414.JPG");
   background-size: cover;
   transform: scaleX(-1);
