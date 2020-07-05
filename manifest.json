@@ -1,8 +1,8 @@
 {
   "name": "Stefan Huckschlags Portfolio",
   "short_name": "SH",
-  "theme_color": "#8155FF",
-  "background_color": "#99ccff",
+  "theme_color": "#86C232",
+  "background_color": "#222629",
   "display": "standalone",
   "Scope": "/",
   "start_url": "/",

@@ -1,23 +1,35 @@
+:root {
+  --dark-green: #61892F;
+  --light-green: #86C232;
+  --dark-gray: #222629;
+  --middle-gray: #474B4F;
+  --light-gray: #6B6E70;
+}
 * {
   padding: 0;
   margin: 0;
 }
 body {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: darkslateblue;
+  font-family: Geneva, Verdana, sans-serif;
+  color: #FFF;
 }
 ul {
-  list-style: none;
+  padding-left: 20px;
+  font-family: monospace;
+  list-style: linear-gradient(var(--dark-green),var(--light-green));
 }
 ul > li {
   /* display: inline-block; */
 }
 a {
   color: white;
+
   text-decoration: none;
 }
 a:hover {
+
   text-decoration: underline;
+  text-decoration-style: var(--light-green);
 }
 .container {
   box-sizing: border-box;
@@ -34,19 +46,28 @@ a:hover {
   padding: 10px;
   width: 100vw;
   height: 10vh;
-  color: #3E513E;
-  background-color: lightblue;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--dark-gray);
+  /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
 }
 .main-content {
+  overflow-x: auto;
   display: flex;
   height: 80vh;
   width: 100vw;
-  background: linear-gradient(45deg, darkslateblue, darkgray, #FFF, #FFF);
+  background: linear-gradient(128deg, var(--dark-gray), var(--dark-gray), var(--middle-gray), var(--light-gray));
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   padding-top: 10vh;;
+}
+.main-info-container {
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  width: 50vw;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
 }
 .main-info {
   box-sizing: border-box;
@@ -57,6 +78,17 @@ a:hover {
   justify-content: center;
   flex-direction: column;
 }
+.private-info {
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  width: 50vw;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--light-gray);
+}
+
 .main-image {
   width: 200px;
   height: 200px;
@@ -75,12 +107,14 @@ a:hover {
   height: 10vh;
   padding: 10px;
   color: white;
-  background-color: #3E513E;
+  background-color: var(--dark-gray);
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
 }
-
+p {
+  margin: 2vh auto;
+}
 .footer
 .link-list > li {
   display: inline-block;
@@ -89,7 +123,10 @@ a:hover {
 .footer-info {
   font-size: 0.7rem;
   font-style: italic;
-  color: white;
+  color: var(--light-green);
+}
+.private-info > .alias {
+  color: var(--dark-green);
 }
 .banner {
   align-content: center;
