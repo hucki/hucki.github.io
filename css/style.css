@@ -15,12 +15,10 @@ body {
 }
 ul {
   padding-left: 20px;
-  /* font-family: monospace; */
   list-style: linear-gradient(var(--dark-green),var(--light-green));
 }
 a {
   color: white;
-
   text-decoration: none;
 }
 a:hover {
@@ -45,7 +43,6 @@ a:hover {
   width: 100vw;
   height: 10vh;
   background-color: var(--dark-gray);
-  /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
 }
 h1 {
   font-size: 1.5rem;
@@ -59,7 +56,6 @@ h1 {
   width: 100vw;
   background: linear-gradient(128deg, var(--dark-gray), var(--dark-gray), var(--middle-gray), var(--light-gray));
   flex-direction: column;
-  /* justify-content: center; */
   align-items: flex-start;
 }
 .caption {
@@ -67,7 +63,6 @@ h1 {
 }
 .main-info-container {
   box-sizing: border-box;
-  /* padding: 10px; */
   display: flex;
   width: 100vw;
   align-items: flex-start;
@@ -78,7 +73,6 @@ h1 {
   box-sizing: border-box;
   padding: 10px;
   display: flex;
-  width: 100vw;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
@@ -97,13 +91,9 @@ h1 {
 .main-image {
   position: absolute;
   margin: 10px;
-  /* top: 5px; */
-  /* right: 5px; */
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  border: 10px;
-  border-color: #FFF;
   background-image: url("../images/20160707_112632_P7070414.JPG");
   background-size: cover;
   transform: scaleX(-1);
@@ -122,10 +112,8 @@ h1 {
   .main-content {
     font-size: 1rem;
     flex-direction: row;
-    /* padding-top: 10vh; */
   }
   .main-info-container {
-    /* flex-direction: row; */
     width: 50vw;
   }
   .main-info,
@@ -143,7 +131,6 @@ h1 {
   display: flex;
   width: 100vw;
   height: 15vh;
-  /*padding: 10px; */
   color: white;
   background-color: var(--dark-gray);
   align-items: center;
