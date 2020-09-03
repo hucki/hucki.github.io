@@ -1,7 +1,7 @@
 {
   "name": "hucki.github.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "My profile on github",
   "main": "service-worker.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
