@@ -1,5 +1,8 @@
+@import url('fontawesome-all.min.css');
 :root {
-  --dark-green: #61892F;
+  --primary: #C6E457;
+  --background: #f7fafc;
+  --text: #1a202c;
   --light-green: #86C232;
   --dark-gray: #222629;
   --middle-gray: #474B4F;
@@ -11,147 +14,67 @@
 }
 body {
   font-family: Geneva, Verdana, sans-serif;
-  color: #FFF;
+  color: var(--text);
+  background-color: var(--background);
 }
-ul {
-  padding-left: 20px;
-  list-style: linear-gradient(var(--dark-green),var(--light-green));
+.linkedin {
+  fill: #0077B5;
+  height: 1rem;
+  padding: 0.2rem;
+}
+
+.github {
+  color: #181717;
+  height: 1rem;
+  padding: 0.2rem;
+}
+.contactlink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.card {
+  background-color: #ffffff;
+  margin: 1rem;
+  padding: 2rem 1rem;
+  box-shadow: 0 0 5px #3333;
+  border-radius: 0.5rem;
+}
+li {
+  display: inline-block;
+  list-style: none;
 }
 a {
-  color: white;
   text-decoration: none;
 }
-a:hover {
-
-  text-decoration: underline;
-  text-decoration-style: var(--light-green);
-}
-.container {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
-
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-}
-.top-bar {
-  display: none;
-  box-sizing: border-box;
-  padding: 10px;
-  width: 100vw;
-  height: 10vh;
-  background-color: var(--dark-gray);
-}
-h1 {
-  font-size: 1.5rem;
-}
-.main-content {
-  box-sizing: border-box;
-  overflow-y: auto;
-  display: flex;
-  font-size: 0.8rem;
-  height: 85vh;
-  width: 100vw;
-  background: linear-gradient(128deg, var(--dark-gray), var(--dark-gray), var(--middle-gray), var(--light-gray));
-  flex-direction: column;
-  align-items: flex-start;
-}
-.caption {
-  margin-left: 25vw;
-}
-.main-info-container {
-  box-sizing: border-box;
-  display: flex;
-  width: 100vw;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-}
-.main-info {
-  box-sizing: border-box;
-  padding: 10px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-}
-.private-info {
-  box-sizing: border-box;
-  padding: 10px;
-  display: flex;
-  width: 100vw;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  color: var(--light-gray);
-}
-
-.main-image {
-  position: absolute;
-  margin: 10px;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background-image: url("../images/20160707_112632_P7070414.JPG");
-  background-size: cover;
-  transform: scaleX(-1);
-  background-position: right;
-}
-@media only screen and (min-width: 768px) {
-  .caption {
-    margin-left: unset;
-  }
-  h1 {
-    font-size: 2rem;
-  }
-  .top-bar {
-    display: inline;
-  }
-  .main-content {
-    font-size: 1rem;
-    flex-direction: row;
-  }
-  .main-info-container {
-    width: 50vw;
-  }
-  .main-info,
-  .private-info {
-    width: 50vw;
-  }
-  .main-image {
-    position: unset;
-    width: 200px;
-    height: 200px;
-  }
-}
-.footer {
-  box-sizing: border-box;
-  display: flex;
-  width: 100vw;
-  height: 15vh;
-  color: white;
-  background-color: var(--dark-gray);
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
 p {
-  margin: 2vh auto;
+  padding-bottom: 1rem;
 }
-.footer
-.link-list > li {
+a:hover{
+  background-color: var(--background);
+}
+.profile-card {
+  background-image: url('../images/me_half.jpg');
+  background-size: contain;
+  /* background-size: 150px; */
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: right;
+  max-width:32rem;
+}
+.techstack {
+  box-sizing: border-box;
   display: inline-block;
+  font-size: small;
+  list-style: none;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: var(--background);
+  box-shadow: inset 5 5 15px #3333;
+  border-radius: 0.5rem;
 }
-.alias,
-.footer-info {
-  font-size: 0.7rem;
-  font-style: italic;
-  color: var(--light-green);
-}
-.private-info > .alias {
-  color: var(--dark-green);
+h2,h3,h4 {
+  margin-bottom: 1rem;
 }
 .banner {
   align-content: center;
