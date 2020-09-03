@@ -1,2 +1,2 @@
 # personal portfolio
-nothing special to see here. Please take a look at [this](hucki.github.io)
+nothing special to see here. Please take a look at [this](https://hucki.github.io)
