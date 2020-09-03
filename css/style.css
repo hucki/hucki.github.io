@@ -1,12 +1,13 @@
-@import url('fontawesome-all.min.css');
+@import url("fontawesome-all.min.css");
 :root {
-  --primary: #C6E457;
+  --primary: #c6e457;
+  --secondary: #3c3a3e;
   --background: #f7fafc;
   --text: #1a202c;
-  --light-green: #86C232;
+  --light-green: #86c232;
   --dark-gray: #222629;
-  --middle-gray: #474B4F;
-  --light-gray: #6B6E70;
+  --middle-gray: #474b4f;
+  --light-gray: #6b6e70;
 }
 * {
   padding: 0;
@@ -18,11 +19,29 @@ body {
   background-color: var(--background);
 }
 .linkedin {
-  fill: #0077B5;
+  fill: #0077b5;
   height: 1rem;
   padding: 0.2rem;
 }
-
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0 0 20px #3333;
+  background-color: var(--secondary);
+  color: var(--primary);
+  padding: 0.5rem;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+}
+.container {
+  margin-top: 2rem;
+  padding: 1rem;
+  /* background: url("../images/backdrop.jpg") no-repeat center center fixed; */
+  background-size: cover;
+}
 .github {
   color: #181717;
   height: 1rem;
@@ -33,34 +52,123 @@ body {
   flex-direction: row;
   align-items: center;
 }
+
 .card {
+  position: relative;
   background-color: #ffffff;
-  margin: 1rem;
-  padding: 2rem 1rem;
+  margin: 1rem auto;
+  padding: 2rem 1rem 0.5rem 1rem;
   box-shadow: 0 0 5px #3333;
   border-radius: 0.5rem;
+}
+.flag-wrap {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  filter: drop-shadow(2px 2px 2px #3333);
+}
+.flag {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: var(--primary);
+  clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 0% 0%);
+}
+.project-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.stack {
+  margin: auto;
+}
+.buttons {
+  margin: 1rem auto;
 }
 li {
   display: inline-block;
   list-style: none;
 }
 a {
+  padding-right: 0.1rem;
   text-decoration: none;
+  border-radius: 1rem;
+}
+a:visited {
+  color: var(--text);
 }
 p {
   padding-bottom: 1rem;
 }
-a:hover{
-  background-color: var(--background);
+a:hover {
+  background-color: var(--primary);
 }
 .profile-card {
-  background-image: url('../images/me_half.jpg');
+  vertical-align: middle;
+  background-image: url("../images/me_half.jpg");
   background-size: contain;
-  /* background-size: 150px; */
   background-repeat: no-repeat;
   background-position-y: top;
   background-position-x: right;
-  max-width:32rem;
+  max-width: 32rem;
+}
+.minivcard {
+  background-color: #ffffff;
+  padding: 2rem 1rem 0.5rem 1rem;
+  box-shadow: 0 0 5px #3333;
+  border-radius: 0.5rem;
+  background-color: white;
+  padding: 0.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  right: 0.3rem;
+  top: 0.3rem;
+  font-size: larger;
+  transition: opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 110;
+}
+.minivcard > .link-list {
+  display: flex;
+}
+.minivcard .github,
+.minivcard .linkedin {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+button {
+  border: 0px solid;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  color: var(--primary);
+  background-color: var(--secondary);
+  box-shadow: 0 0 15px #3335;
+}
+.project-img {
+  width: 100%;
+}
+button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 2px 2px 15px #3335;
+  cursor: pointer;
+}
+.minime {
+  border: 1px solid var(--primary);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-image: url("../images/me.jpg");
+  background-size: cover;
 }
 .techstack {
   box-sizing: border-box;
@@ -68,12 +176,13 @@ a:hover{
   font-size: small;
   list-style: none;
   padding: 0.5rem;
-  margin-bottom: 0.5rem;
-  background-color: var(--background);
-  box-shadow: inset 5 5 15px #3333;
-  border-radius: 0.5rem;
+  margin-bottom: 0.25rem;
+  box-shadow: inset 2px 2px 5px #3333;
+  border-radius: 1rem;
 }
-h2,h3,h4 {
+h2,
+h3,
+h4 {
   margin-bottom: 1rem;
 }
 .banner {
@@ -81,4 +190,14 @@ h2,h3,h4 {
   display: none;
   justify-content: center;
   width: 100%;
+}
+@media (min-width: 600px) {
+  .content-container {
+    margin: auto;
+    max-width: 900px;
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr;
+  }
 }
