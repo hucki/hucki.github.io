@@ -114,7 +114,7 @@ a:hover {
 }
 .profile-card {
   vertical-align: middle;
-  background-image: url("../images/me_half.jpg");
+  background-image: url("../images/me_half-autox200.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position-y: top;
@@ -176,7 +176,7 @@ button:hover {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  background-image: url("../images/me.jpg");
+  background-image: url("../images/me-autox50.jpg");
   background-size: cover;
 }
 .techstack {
