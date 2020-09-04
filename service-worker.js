@@ -1,12 +1,12 @@
-const cacheName = "cache-v9";
+const cacheName = "cache-v10";
 const precacheResources = [
   "/",
   "/index.html",
   "/css/style.css",
-  "/images/grouptripper.jpg",
-  "/images/me.jpg",
-  "/images/me_half.jpg",
-  "/images/necto.jpg",
+  "/images/grouptripper-autox300.jpg",
+  "/images/me-autox50.jpg",
+  "/images/me_half-autox200.jpg",
+  "/images/necto-autox300.jpg",
   "/images/icons/icon-72x72.png",
   "/images/icons/icon-128x128.png",
   "/images/icons/icon-192x192.png",
