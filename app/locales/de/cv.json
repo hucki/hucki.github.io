@@ -3,11 +3,11 @@
   "keyMetrics": {
     "title": "Kennzahlen",
     "currentStatus": "Aktueller Status",
-    "statusValue": "Selbstständig",
+    "statusValue": "freiberuflich Selbstständig",
     "softwareDev": "Software-Entwicklung",
-    "softwareDevValue": "5+ Jahre",
+    "softwareDevValue": "{{softwareDevYears}}+ Jahre",
     "itTotal": "IT-Branche Gesamt",
-    "itTotalValue": "22+ Jahre",
+    "itTotalValue": "{{itTotalYears}}+ Jahre",
     "techFocus": "Tech Stack Fokus",
     "techFocusValue": "JavaScript Ökosystem"
   },
@@ -42,8 +42,8 @@
   },
   "experiences": [
     {
-      "title": "Freelance Software Engineer / System Architect",
-      "company": "Selbstständig",
+      "title": "Software Engineer / System Architect",
+      "company": "freiberuflich Selbstständig",
       "period": "Feb 2025 – heute",
       "achievements": [
         "Entwicklung und Architektur von rffl.io, einer Kunden-Aktivierungsplattform für B2C- und B2B-Umgebungen mit Engagement-Mechaniken und Analytics",

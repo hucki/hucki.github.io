@@ -5,9 +5,9 @@
     "currentStatus": "Current Status",
     "statusValue": "Freelancing",
     "softwareDev": "Software Development",
-    "softwareDevValue": "5+ Years",
+    "softwareDevValue": "{{softwareDevYears}}+ Years",
     "itTotal": "IT Industry Total",
-    "itTotalValue": "22+ Years",
+    "itTotalValue": "{{itTotalYears}}+ Years",
     "techFocus": "Tech Stack Focus",
     "techFocusValue": "JavaScript Ecosystem"
   },

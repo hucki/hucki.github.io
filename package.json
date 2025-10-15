@@ -5,7 +5,7 @@
   "homepage": "https://hucki.github.io",
   "scripts": {
     "build": "react-router build",
-    "dev": "react-router dev",
+    "dev": "react-router dev --host",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc"
   },
@@ -15,9 +15,11 @@
     "i18next": "^25.6.0",
     "i18next-browser-languagedetector": "^8.2.0",
     "isbot": "^5.1.31",
+    "lucide": "^0.545.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-i18next": "^16.0.1",
+    "react-icons": "^5.5.0",
     "react-router": "^7.9.2"
   },
   "devDependencies": {

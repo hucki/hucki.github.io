@@ -26,9 +26,8 @@ export const links: Route.LinksFunction = () => [
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
-  // Language will be set dynamically by i18n
   return (
-    <html>
+    <html suppressHydrationWarning>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -46,7 +45,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                   history.replaceState(null, null, redirect);
                 }
 
-                // Prevent flash of incorrect theme
+                // Prevent flash of incorrect theme - must run before React hydrates
                 try {
                   var mode = localStorage.getItem('colorMode') || 'system';
                   var actualMode = mode;
@@ -58,7 +57,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                   document.documentElement.classList.add(actualMode);
                 } catch (e) {}
 
-                // Set language attribute to prevent flash
+                // Set language attribute to prevent flash - must run before React hydrates
                 try {
                   var lang = localStorage.getItem('language') ||
                              (navigator.language.startsWith('de') ? 'de' : 'en');

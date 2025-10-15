@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans:
+    "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 @variant dark (&:is(.dark *));
@@ -13,5 +14,18 @@ body {
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
+  }
+}
+
+/* iOS Liquid Glass Effect for Header */
+@supports (backdrop-filter: blur(20px)) {
+  header {
+    backdrop-filter: blur(20px) saturate(180%) !important;
+  }
+}
+
+@supports (-webkit-backdrop-filter: blur(20px)) {
+  header {
+    -webkit-backdrop-filter: blur(20px) saturate(180%) !important;
   }
 }

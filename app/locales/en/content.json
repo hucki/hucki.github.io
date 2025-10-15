@@ -58,7 +58,7 @@
     "professional": {
       "title": "Professional Background",
       "paragraphs": [
-        "I am an accomplished Full Stack Developer specializing in JavaScript / TypeScript technologies, boasting over eight years of experience in the IT industry. Proficient in Node.js, React, Next.js, Express, MongoDB, and PostgreSQL, I bring a wealth of expertise to the table.",
+        "I am an accomplished Full Stack Developer specializing in JavaScript / TypeScript technologies, boasting over {{softwareDevYears}} years as full time Developer and over {{itTotalYears}} years of experience in the IT industry. Proficient in Node.js, React, Next.js, Express, MongoDB, and PostgreSQL, I bring a wealth of expertise to the table.",
         "My capacity to swiftly grasp and assimilate new technologies seamlessly aligns with my analytical problem-solving skills. Over the course of my career, I have cultivated a comprehensive background and profound understanding of IT landscapes and systems.",
         "With extensive experience in serverless architectures on AWS, I've built production-ready applications using Lambda, API Gateway, DynamoDB, and EventBridge. I'm well-versed in implementing CI/CD pipelines and infrastructure-as-code practices with the Serverless Framework.",
         "In addition, I possess substantial experience in providing guidance and instruction to clients within a professional software engineering environment. I take pleasure in imparting my knowledge to colleagues and co-workers, fostering a collaborative and knowledgeable team environment."
@@ -70,6 +70,9 @@
         "Javascript",
         "TypeScript",
         "React",
+        "AWS Cloud",
+        "Serverless Framework",
+        "Docker",
         "Next.js",
         "Express",
         "Node.js",
@@ -77,14 +80,8 @@
         "PostgreSQL",
         "Prisma",
         "HTML",
-        "CSS",
         "Tailwind CSS",
-        "Angular",
-        "Koa",
         "Redis",
-        "AWS Lambda",
-        "Serverless Framework",
-        "Docker",
         "Git"
       ]
     },

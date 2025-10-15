@@ -58,7 +58,7 @@
     "professional": {
       "title": "Beruflicher Hintergrund",
       "paragraphs": [
-        "Ich bin ein versierter Full Stack Developer, der sich auf JavaScript-/TypeScript-Technologien spezialisiert hat und über acht Jahre Erfahrung in der IT-Branche verfügt. Kompetent in Node.js, React, Next.js, Express, MongoDB und PostgreSQL bringe ich eine Fülle von Fachwissen mit.",
+        "Ich bin ein versierter Full Stack Developer, der sich auf JavaScript-/TypeScript-Technologien spezialisiert hat und über {{softwareDevYears}} Jahre als Vollzeit Entwickler und mehr als {{itTotalYears}} Jahre Erfahrung in der IT-Branche verfügt. Kompetent in AWS Cloud Infrastruktur, Node.js, React, Next.js, Express, MongoDB und PostgreSQL bringe ich eine Fülle von Fachwissen mit.",
         "Meine Fähigkeit, neue Technologien schnell zu erfassen und zu assimilieren, steht im Einklang mit meinen analytischen Problemlösungsfähigkeiten. Im Laufe meiner Karriere habe ich einen umfassenden Hintergrund und ein tiefes Verständnis von IT-Landschaften und -Systemen entwickelt.",
         "Mit umfangreicher Erfahrung in serverlosen Architekturen auf AWS habe ich produktionsreife Anwendungen mit Lambda, API Gateway, DynamoDB und EventBridge erstellt. Ich bin versiert in der Implementierung von CI/CD-Pipelines und Infrastructure-as-Code-Praktiken mit dem Serverless Framework.",
         "Darüber hinaus verfüge ich über umfangreiche Erfahrung in der Beratung und Schulung von Kunden in einem professionellen Software-Engineering-Umfeld. Ich gebe gerne mein Wissen an Kollegen und Mitarbeiter weiter und fördere eine kollaborative und sachkundige Teamumgebung."
@@ -70,6 +70,9 @@
         "Javascript",
         "TypeScript",
         "React",
+        "AWS Cloud",
+        "Serverless Framework",
+        "Docker",
         "Next.js",
         "Express",
         "Node.js",
@@ -77,14 +80,8 @@
         "PostgreSQL",
         "Prisma",
         "HTML",
-        "CSS",
         "Tailwind CSS",
-        "Angular",
-        "Koa",
         "Redis",
-        "AWS Lambda",
-        "Serverless Framework",
-        "Docker",
         "Git"
       ]
     },
