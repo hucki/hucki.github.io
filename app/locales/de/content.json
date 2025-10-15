@@ -1,0 +1,150 @@
+{
+  "home": {
+    "hero": {
+      "title": "Freelance Developer erstellt",
+      "titleHighlight": "Digitale Lösungen",
+      "subtitle": "Ich helfe Unternehmen und Startups, ihre Ideen durch sauberen Code, durchdachtes Design und skalierbare Architektur zum Leben zu erwecken."
+    },
+    "cta": {
+      "title": "Lass uns zusammenarbeiten",
+      "subtitle": "Hast du ein Projekt im Kopf? Ich bin immer interessiert an neuen Möglichkeiten und Herausforderungen."
+    },
+    "skills": {
+      "title": "Was ich mache",
+      "items": [
+        {
+          "title": "Frontend-Entwicklung",
+          "description": "Aufbau responsiver, performanter Webanwendungen mit modernen JavaScript-Frameworks wie React und Next.js, Erstellung von sauberem und wartbarem Code."
+        },
+        {
+          "title": "Backend-Systeme",
+          "description": "Gestaltung robuster APIs und Server-Architekturen mit Node.js, Express und Datenbanken wie PostgreSQL und MongoDB, die effizient skalieren."
+        },
+        {
+          "title": "Serverless Architektur",
+          "description": "Produktionsreife serverlose Anwendungen auf AWS mit Lambda, API Gateway, DynamoDB und EventBridge mit event-gesteuerten Design-Mustern."
+        },
+        {
+          "title": "DevOps & Cloud",
+          "description": "Implementierung von CI/CD-Pipelines und Cloud-Infrastruktur mit dem Serverless Framework für zuverlässige Deployments und optimale Performance."
+        }
+      ]
+    },
+    "projects": {
+      "title": "Aktuelle Projekte",
+      "items": [
+        {
+          "title": "rffl.io - Raffle Plattform",
+          "description": "Kunden-Aktivierungsplattform für B2C- und B2B-Umgebungen mit Engagement-Mechaniken und Analytics"
+        },
+        {
+          "title": "Job Portal für Senioren",
+          "description": "Spezialisierte Beschäftigungsplattform, die erfahrene Fachkräfte mit auf ihre Expertise zugeschnittenen Möglichkeiten verbindet"
+        },
+        {
+          "title": "Grouptripper",
+          "description": "Reiseplanungs- und Koordinationstool für Gruppenreisen mit Reiserouten-Management"
+        },
+        {
+          "title": "Necto",
+          "description": "Vernetzte Lösungen mit modernen Webtechnologien und API-Integrationen"
+        }
+      ]
+    }
+  },
+  "about": {
+    "title": "Über mich",
+    "subtitle": "Full Stack Developer & Software Engineer",
+    "professional": {
+      "title": "Beruflicher Hintergrund",
+      "paragraphs": [
+        "Ich bin ein versierter Full Stack Developer, der sich auf JavaScript-/TypeScript-Technologien spezialisiert hat und über acht Jahre Erfahrung in der IT-Branche verfügt. Kompetent in Node.js, React, Next.js, Express, MongoDB und PostgreSQL bringe ich eine Fülle von Fachwissen mit.",
+        "Meine Fähigkeit, neue Technologien schnell zu erfassen und zu assimilieren, steht im Einklang mit meinen analytischen Problemlösungsfähigkeiten. Im Laufe meiner Karriere habe ich einen umfassenden Hintergrund und ein tiefes Verständnis von IT-Landschaften und -Systemen entwickelt.",
+        "Mit umfangreicher Erfahrung in serverlosen Architekturen auf AWS habe ich produktionsreife Anwendungen mit Lambda, API Gateway, DynamoDB und EventBridge erstellt. Ich bin versiert in der Implementierung von CI/CD-Pipelines und Infrastructure-as-Code-Praktiken mit dem Serverless Framework.",
+        "Darüber hinaus verfüge ich über umfangreiche Erfahrung in der Beratung und Schulung von Kunden in einem professionellen Software-Engineering-Umfeld. Ich gebe gerne mein Wissen an Kollegen und Mitarbeiter weiter und fördere eine kollaborative und sachkundige Teamumgebung."
+      ]
+    },
+    "skills": {
+      "title": "Technische Fähigkeiten",
+      "items": [
+        "Javascript",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Express",
+        "Node.js",
+        "MongoDB",
+        "PostgreSQL",
+        "Prisma",
+        "HTML",
+        "CSS",
+        "Tailwind CSS",
+        "Angular",
+        "Koa",
+        "Redis",
+        "AWS Lambda",
+        "Serverless Framework",
+        "Docker",
+        "Git"
+      ]
+    },
+    "personal": {
+      "title": "Jenseits des Codes",
+      "items": [
+        {
+          "icon": "👫",
+          "text": "Liebevoller Ehemann und Vollzeit-Nerd, leidenschaftlich über Technologie und kontinuierliches Lernen."
+        },
+        {
+          "icon": "🌱",
+          "text": "Genieße Natur und Reisen und treffe mich gerne mit Freunden und Familie. Bevorzuge dies mit minimaler Umweltbelastung zu tun."
+        },
+        {
+          "icon": "💾",
+          "text": "Programmiere mein eigenes Smart Home mit NodeRed, kombiniere verschiedene Standards mit MQTT und RESTful APIs."
+        },
+        {
+          "icon": "🥁",
+          "text": "Auch Liebhaber und aktiver Spieler schottischer Folkmusik, bringe Rhythmus zum Leben."
+        },
+        {
+          "icon": "🧘‍♂️",
+          "text": "Ich meditiere täglich und wenn die Zeit es erlaubt, zeichne ich, mache Fotos und braue gelegentlich Bier."
+        }
+      ]
+    }
+  },
+  "imprint": {
+    "title": "Impressum",
+    "contact": {
+      "title": "Kontaktinformationen",
+      "name": "Stefan Huckschlag",
+      "role": "Full Stack Developer",
+      "email": "E-Mail",
+      "website": "Webseite"
+    },
+    "connect": {
+      "title": "Verbinde dich mit mir"
+    },
+    "legal": {
+      "title": "Rechtliche Hinweise",
+      "tmg": {
+        "title": "Angaben gemäß § 5 TMG",
+        "content": "Stefan Huckschlag\nFreelance Software Developer"
+      },
+      "responsible": {
+        "title": "Verantwortlich für den Inhalt",
+        "content": "Stefan Huckschlag\nE-Mail: hello@huckschlag.dev"
+      },
+      "disclaimer": {
+        "title": "Haftungsausschluss",
+        "content": "Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich."
+      }
+    },
+    "privacy": {
+      "title": "Datenschutzhinweis",
+      "content": "Diese Website wird auf GitHub Pages gehostet und sammelt, speichert oder verarbeitet keine personenbezogenen Daten. Es werden keine Cookies verwendet und keine Analyse- oder Tracking-Tools implementiert.\n\nWenn Sie diese Website besuchen, kann GitHub bestimmte technische Informationen wie IP-Adressen zum Zweck der Bereitstellung und Sicherung des Dienstes erfassen. Weitere Informationen finden Sie in den ",
+      "githubLink": "GitHub Datenschutzerklärung"
+    }
+  }
+}

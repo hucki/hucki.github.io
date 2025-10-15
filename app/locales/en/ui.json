@@ -1,0 +1,30 @@
+{
+  "nav": {
+    "home": "Home",
+    "work": "Work",
+    "skills": "Skills",
+    "about": "About",
+    "cv": "CV",
+    "imprint": "Imprint"
+  },
+  "footer": {
+    "copyright": "© 2025 huckschlag.dev | Built with care"
+  },
+  "buttons": {
+    "viewMyWork": "View My Work",
+    "getInTouch": "Get In Touch",
+    "startConversation": "Start a Conversation",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "viewOnGithub": "View on GitHub"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "language": {
+    "de": "Deutsch",
+    "en": "English"
+  }
+}

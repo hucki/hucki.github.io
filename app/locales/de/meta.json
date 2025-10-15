@@ -1,0 +1,18 @@
+{
+  "home": {
+    "title": "Huckschlag.dev - Freelance Developer",
+    "description": "Freelance Full Stack Developer spezialisiert auf moderne Webtechnologien"
+  },
+  "about": {
+    "title": "Über mich - Stefan Huckschlag",
+    "description": "Lerne mehr über Stefan Huckschlag - Full Stack Developer"
+  },
+  "cv": {
+    "title": "Lebenslauf - Stefan Huckschlag",
+    "description": "Berufserfahrung und Karriere-Verlauf"
+  },
+  "imprint": {
+    "title": "Impressum - Stefan Huckschlag",
+    "description": "Kontaktinformationen und rechtliche Hinweise"
+  }
+}
