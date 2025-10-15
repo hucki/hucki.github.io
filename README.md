@@ -1,2 +1,16 @@
-# personal portfolio
-nothing special to see here. Please take a look at [this](https://hucki.github.io)
+# huckschlag.dev
+
+Personal portfolio website built with React Router and TypeScript.
+
+## Development
+
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```

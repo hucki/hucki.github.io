@@ -1,0 +1,122 @@
+{
+  "title": "Professional Experience",
+  "keyMetrics": {
+    "title": "Key Metrics",
+    "currentStatus": "Current Status",
+    "statusValue": "Freelancing",
+    "softwareDev": "Software Development",
+    "softwareDevValue": "{{softwareDevYears}}+ Years",
+    "itTotal": "IT Industry Total",
+    "itTotalValue": "{{itTotalYears}}+ Years",
+    "techFocus": "Tech Stack Focus",
+    "techFocusValue": "JavaScript Ecosystem"
+  },
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "degree": "Software Engineering",
+        "institution": "Codeworks",
+        "period": "2020",
+        "description": "Full-time bootcamp. Focus: Full Stack Software Development in JavaScript"
+      },
+      {
+        "degree": "Bachelor of Arts (B.A.)",
+        "institution": "Fachhochschule Südwestfalen",
+        "period": "2011 – 2012",
+        "description": "Part-time degree. Focus: Information Management, Tax Law, Individual Leadership Skills"
+      },
+      {
+        "degree": "Business Administration (VWA)",
+        "institution": "Verwaltungs- und Wirtschaftsakademie (VWA) Dortmund",
+        "period": "2004 – 2007",
+        "description": "Part-time degree. Focus: Business Administration, Economics, Business Law"
+      },
+      {
+        "degree": "IT Specialist",
+        "institution": "Ruhr Elektro-Handel Jürgen Flottmann GmbH & Co. KG",
+        "period": "1999 – 2002",
+        "description": "Vocational training"
+      }
+    ]
+  },
+  "experiences": [
+    {
+      "title": "Freelance Software Engineer / System Architect",
+      "company": "Self-Employed",
+      "period": "Feb 2025 – present",
+      "achievements": [
+        "Developing and architecting rffl.io, a customer activation platform for B2C and B2B environments with engagement mechanics and analytics",
+        "Co-founding and building a specialized job platform for senior professionals, connecting experienced talent with opportunities tailored to their expertise",
+        "Providing full-stack software engineering and system architecture consulting services"
+      ]
+    },
+    {
+      "title": "Frontend Developer → Senior Frontend Developer",
+      "company": "tonies®",
+      "period": "Nov 2021 – Jan 2025",
+      "achievements": [
+        "Rapidly progressed from bootcamp graduate to Senior Frontend Engineer within 1.5 years on global e-commerce platform (7.3M+ Tonieboxes, 90M+ Tonies sold)",
+        "Developed fullstack expertise in checkout/payment systems, owning features from technical planning to rollout with complete stakeholder communication",
+        "Recognized for analytical problem-solving, consistently delivering high-quality solutions across complex technical challenges"
+      ]
+    },
+    {
+      "title": "Frontend Developer",
+      "company": "Urlaubsguru GmbH",
+      "period": "Jan 2021 – Oct 2021",
+      "achievements": [
+        "Built frontend component library (Storybook, VueJS, TailwindCSS)",
+        "Implemented content editor system (VueJs, Buefy) for editorial team, connecting GraphQL microservices",
+        "Integrated component library into SPA (VueJS/nuxt), connecting GraphQL microservices"
+      ]
+    },
+    {
+      "title": "Co-founder / Full Stack Developer",
+      "company": "Grouptripper",
+      "period": "2020",
+      "achievements": [
+        "Programmed frontend and backend with TypeScript in React, Express and MongoDB",
+        "Integrated APIs (maps, routing) and defined parts of the SPA data model",
+        "Integrated deployment workflow into CI pipeline"
+      ]
+    },
+    {
+      "title": "Automation Test Engineer",
+      "company": "regMan",
+      "period": "2020",
+      "achievements": [
+        "Implemented database migration and seeding (PostgreSQL)",
+        "Unit and integration testing as well as refactoring of legacy codebase"
+      ]
+    },
+    {
+      "title": "IT Consultant",
+      "company": "Breitenbach Software Engineering GmbH",
+      "period": "2013 – 2020",
+      "achievements": [
+        "Responsible for projects with key customers of up to 10k users",
+        "Created technical concepts and implemented custom software modules and APIs to external systems (SAP-RFC, csv, iCal)",
+        "Migrated internal bug-tracking from Bugzilla to MantisBT"
+      ]
+    },
+    {
+      "title": "Sales Controller",
+      "company": "Brauerei C.& A. Veltins GmbH & Co. KG",
+      "period": "2007 – 2013",
+      "achievements": [
+        "Responsible for data validation, custom reporting and implementation of customer-specific APIs to SAP Beverage",
+        "Project management for implementing new software, optimizing and automating internal processes to improve data quality"
+      ]
+    },
+    {
+      "title": "IT Specialist",
+      "company": "Ruhr Elektro-Handel Jürgen Flottmann GmbH & Co. KG",
+      "period": "2002 – 2007",
+      "achievements": [
+        "System administrator for multiple locations",
+        "Application development with PL/SQL, VBA, MS Access"
+      ]
+    }
+  ]
+}

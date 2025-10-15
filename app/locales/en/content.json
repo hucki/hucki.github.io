@@ -1,0 +1,147 @@
+{
+  "home": {
+    "hero": {
+      "title": "Freelance Developer Building",
+      "titleHighlight": "Digital Solutions",
+      "subtitle": "I help businesses and startups bring their ideas to life through clean code, thoughtful design, and scalable architecture."
+    },
+    "cta": {
+      "title": "Let's Work Together",
+      "subtitle": "Have a project in mind? I'm always interested in hearing about new opportunities and challenges."
+    },
+    "skills": {
+      "title": "What I Do",
+      "items": [
+        {
+          "title": "Frontend Development",
+          "description": "Building responsive, performant web applications with modern JavaScript frameworks like React and Next.js, creating clean and maintainable code."
+        },
+        {
+          "title": "Backend Systems",
+          "description": "Designing robust APIs and server architectures with Node.js, Express, and databases like PostgreSQL and MongoDB that scale efficiently."
+        },
+        {
+          "title": "Serverless Architecture",
+          "description": "Production-ready serverless applications on AWS using Lambda, API Gateway, DynamoDB, and EventBridge with event-driven design patterns."
+        },
+        {
+          "title": "DevOps & Cloud",
+          "description": "Implementing CI/CD pipelines and cloud infrastructure with the Serverless Framework to ensure reliable deployments and optimal performance."
+        }
+      ]
+    },
+    "projects": {
+      "title": "Recent Projects",
+      "items": [
+        {
+          "title": "rffl.io - Raffle Platform",
+          "description": "Customer activation platform for B2C and B2B environments with engagement mechanics and analytics"
+        },
+        {
+          "title": "Job Platform for Seniors",
+          "description": "Specialized employment platform connecting senior professionals with opportunities tailored to their experience"
+        },
+        {
+          "title": "Grouptripper",
+          "description": "Travel planning and coordination tool for group trips with itinerary management"
+        },
+        {
+          "title": "Necto",
+          "description": "Connected solutions leveraging modern web technologies and API integrations"
+        }
+      ]
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Full Stack Developer & Software Engineer",
+    "professional": {
+      "title": "Professional Background",
+      "paragraphs": [
+        "I am an accomplished Full Stack Developer specializing in JavaScript / TypeScript technologies, boasting over {{softwareDevYears}} years as full time Developer and over {{itTotalYears}} years of experience in the IT industry. Proficient in Node.js, React, Next.js, Express, MongoDB, and PostgreSQL, I bring a wealth of expertise to the table.",
+        "My capacity to swiftly grasp and assimilate new technologies seamlessly aligns with my analytical problem-solving skills. Over the course of my career, I have cultivated a comprehensive background and profound understanding of IT landscapes and systems.",
+        "With extensive experience in serverless architectures on AWS, I've built production-ready applications using Lambda, API Gateway, DynamoDB, and EventBridge. I'm well-versed in implementing CI/CD pipelines and infrastructure-as-code practices with the Serverless Framework.",
+        "In addition, I possess substantial experience in providing guidance and instruction to clients within a professional software engineering environment. I take pleasure in imparting my knowledge to colleagues and co-workers, fostering a collaborative and knowledgeable team environment."
+      ]
+    },
+    "skills": {
+      "title": "Technical Skills",
+      "items": [
+        "Javascript",
+        "TypeScript",
+        "React",
+        "AWS Cloud",
+        "Serverless Framework",
+        "Docker",
+        "Next.js",
+        "Express",
+        "Node.js",
+        "MongoDB",
+        "PostgreSQL",
+        "Prisma",
+        "HTML",
+        "Tailwind CSS",
+        "Redis",
+        "Git"
+      ]
+    },
+    "personal": {
+      "title": "Beyond the Code",
+      "items": [
+        {
+          "icon": "👫",
+          "text": "Loving husband and full time nerd, passionate about technology and continuous learning."
+        },
+        {
+          "icon": "🌱",
+          "text": "Enjoying nature and loving to travel and meet with friends and family. Prefer to do this with a minimal environmental impact."
+        },
+        {
+          "icon": "💾",
+          "text": "Programming my own smart home with NodeRed, combining different standards with MQTT and RESTful APIs."
+        },
+        {
+          "icon": "🥁",
+          "text": "Also lover and active player of Scottish folk music, bringing rhythm to life."
+        },
+        {
+          "icon": "🧘‍♂️",
+          "text": "I meditate on a daily basis and if time allows I draw, take photos and occasionally brew beer."
+        }
+      ]
+    }
+  },
+  "imprint": {
+    "title": "Imprint",
+    "contact": {
+      "title": "Contact Information",
+      "name": "Stefan Huckschlag",
+      "role": "Full Stack Developer",
+      "email": "Email",
+      "website": "Website"
+    },
+    "connect": {
+      "title": "Connect With Me"
+    },
+    "legal": {
+      "title": "Legal Notice",
+      "tmg": {
+        "title": "Information according to § 5 TMG",
+        "content": "Stefan Huckschlag\nFreelance Software Developer"
+      },
+      "responsible": {
+        "title": "Responsible for content",
+        "content": "Stefan Huckschlag\nEmail: hello@huckschlag.dev"
+      },
+      "disclaimer": {
+        "title": "Disclaimer",
+        "content": "Despite careful content control, we assume no liability for the content of external links. The operators of the linked pages are solely responsible for their content."
+      }
+    },
+    "privacy": {
+      "title": "Privacy Notice",
+      "content": "This website is hosted on GitHub Pages and does not collect, store, or process any personal data. No cookies are used, and no analytics or tracking tools are implemented.\n\nWhen you visit this website, GitHub may collect certain technical information such as IP addresses for the purpose of providing and securing the service. For more information, please refer to ",
+      "githubLink": "GitHub's Privacy Statement"
+    }
+  }
+}
