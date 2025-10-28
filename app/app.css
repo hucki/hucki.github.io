@@ -1,9 +1,94 @@
 @import "tailwindcss";
 
+/* changa-one-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Changa One";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/changa-one-v22-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* changa-one-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Changa One";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/changa-one-v22-latin-italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* pt-mono-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "PT Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/pt-mono-v14-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 @theme {
   --font-sans:
     "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-display: "Changa One", ui-sans-serif, system-ui, sans-serif;
+  --font-mono:
+    "PT Mono", ui-monospace, "SF Mono", Monaco, "Cascadia Code", "Roboto Mono",
+    Consolas, "Courier New", monospace;
+}
+
+/* Text Outline Utilities */
+.text-outline-lime {
+  -webkit-text-stroke: 2px #84cc16;
+  text-stroke: 2px #84cc16;
+}
+
+.text-outline-white {
+  -webkit-text-stroke: 2px #ffffff;
+  text-stroke: 2px #ffffff;
+}
+
+.text-outline-black {
+  -webkit-text-stroke: 2px #000000;
+  text-stroke: 2px #000000;
+}
+
+.text-outline-gray {
+  -webkit-text-stroke: 2px #9ca3af;
+  text-stroke: 2px #9ca3af;
+}
+
+.text-outline-thin {
+  -webkit-text-stroke: 1px currentColor;
+}
+
+.text-outline-thick {
+  -webkit-text-stroke: 3px currentColor;
+}
+
+/* Outline only (transparent fill) */
+.text-outline-only {
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Dark mode variants */
+.dark .dark\:text-outline-white {
+  -webkit-text-stroke: 2px #ffffff;
+  text-stroke: 2px #ffffff;
+}
+
+.dark .dark\:text-outline-black {
+  -webkit-text-stroke: 2px #000000;
+  text-stroke: 2px #000000;
+}
+
+.dark .dark\:text-outline-gray {
+  -webkit-text-stroke: 2px #9ca3af;
+  text-stroke: 2px #9ca3af;
+}
+
+.dark .dark\:text-outline-lime {
+  -webkit-text-stroke: 2px #84cc16;
+  text-stroke: 2px #84cc16;
 }
 
 @variant dark (&:is(.dark *));
