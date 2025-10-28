@@ -1,7 +1,7 @@
 {
   "home": {
     "hero": {
-      "title": "Freelance Developer erstellt",
+      "title": "Zusammen mit Ihnen finde ich",
       "titleHighlight": "Digitale Lösungen",
       "subtitle": "Ich helfe Unternehmen und Startups, ihre Ideen durch sauberen Code, durchdachtes Design und skalierbare Architektur zum Leben zu erwecken."
     },
@@ -65,44 +65,26 @@
       ]
     },
     "skills": {
-      "title": "Technische Fähigkeiten",
-      "items": [
-        "Javascript",
-        "TypeScript",
-        "React",
-        "AWS Cloud",
-        "Serverless Framework",
-        "Docker",
-        "Next.js",
-        "Express",
-        "Node.js",
-        "MongoDB",
-        "PostgreSQL",
-        "Prisma",
-        "HTML",
-        "Tailwind CSS",
-        "Redis",
-        "Git"
-      ]
+      "title": "Tech Stack"
     },
     "personal": {
       "title": "Jenseits des Codes",
       "items": [
         {
           "icon": "👫",
-          "text": "Liebevoller Ehemann und Vollzeit-Nerd, leidenschaftlich über Technologie und kontinuierliches Lernen."
+          "text": "Liebevoller Ehemann und Vollzeit-Nerd, mit einer Leidenschaft für Technologie und kontinuierliches Lernen."
         },
         {
           "icon": "🌱",
-          "text": "Genieße Natur und Reisen und treffe mich gerne mit Freunden und Familie. Bevorzuge dies mit minimaler Umweltbelastung zu tun."
+          "text": "Naturfreund und Reisender mit möglichst kleinem ökologischen Fußabdruck. Gerne mit Freunden und Familie."
         },
         {
-          "icon": "💾",
-          "text": "Programmiere mein eigenes Smart Home mit NodeRed, kombiniere verschiedene Standards mit MQTT und RESTful APIs."
+          "icon": "🪚",
+          "text": "Ich bastle gerne mit Holz, baue elektronische Geräte und automatisiere mein vernetztes Zuhause."
         },
         {
           "icon": "🥁",
-          "text": "Auch Liebhaber und aktiver Spieler schottischer Folkmusik, bringe Rhythmus zum Leben."
+          "text": "Liebhaber und aktiver Spieler schottischer Folkmusik."
         },
         {
           "icon": "🧘‍♂️",
@@ -127,7 +109,7 @@
       "title": "Rechtliche Hinweise",
       "tmg": {
         "title": "Angaben gemäß § 5 TMG",
-        "content": "Stefan Huckschlag\nFreelance Software Developer"
+        "content": "Stefan Huckschlag\nFreiberuflicher Software Engineer & Systemarchitekt"
       },
       "responsible": {
         "title": "Verantwortlich für den Inhalt",

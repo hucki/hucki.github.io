@@ -1,7 +1,7 @@
 {
   "home": {
     "hero": {
-      "title": "Freelance Developer Building",
+      "title": "Together with you, I create",
       "titleHighlight": "Digital Solutions",
       "subtitle": "I help businesses and startups bring their ideas to life through clean code, thoughtful design, and scalable architecture."
     },
@@ -65,25 +65,7 @@
       ]
     },
     "skills": {
-      "title": "Technical Skills",
-      "items": [
-        "Javascript",
-        "TypeScript",
-        "React",
-        "AWS Cloud",
-        "Serverless Framework",
-        "Docker",
-        "Next.js",
-        "Express",
-        "Node.js",
-        "MongoDB",
-        "PostgreSQL",
-        "Prisma",
-        "HTML",
-        "Tailwind CSS",
-        "Redis",
-        "Git"
-      ]
+      "title": "Tech Stack"
     },
     "personal": {
       "title": "Beyond the Code",
@@ -97,8 +79,8 @@
           "text": "Enjoying nature and loving to travel and meet with friends and family. Prefer to do this with a minimal environmental impact."
         },
         {
-          "icon": "💾",
-          "text": "Programming my own smart home with NodeRed, combining different standards with MQTT and RESTful APIs."
+          "icon": "🪚",
+          "text": "Tinkering with wood, building electronic devices and automating my connected home also brings me joy."
         },
         {
           "icon": "🥁",
@@ -127,7 +109,7 @@
       "title": "Legal Notice",
       "tmg": {
         "title": "Information according to § 5 TMG",
-        "content": "Stefan Huckschlag\nFreelance Software Developer"
+        "content": "Stefan Huckschlag\nFreelance Software Engineer & System Architect"
       },
       "responsible": {
         "title": "Responsible for content",
