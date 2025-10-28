@@ -2,6 +2,7 @@ import { Link } from "react-router";
 import { useTranslation } from "react-i18next";
 import { useState, useEffect, useRef } from "react";
 import { isFeatureEnabled } from "~/utils/featureFlags";
+import { TextLogo } from "./Logo";
 
 export function Header() {
   const { t } = useTranslation(["ui"]);
@@ -105,11 +106,8 @@ export function Header() {
               </div>
             </div>
 
-            <Link
-              to="/"
-              className="text-2xl font-bold tracking-tight hover:text-lime-500 transition-colors"
-            >
-              huckschlag.dev
+            <Link to="/">
+              <TextLogo />
             </Link>
           </div>
 
@@ -118,7 +116,7 @@ export function Header() {
             <ul className="flex gap-8 text-gray-500 dark:text-gray-400">
               <li>
                 <a
-                  href="#work"
+                  href="/#work"
                   className="hover:text-lime-500 transition-colors"
                 >
                   {t("nav.work")}
@@ -126,7 +124,7 @@ export function Header() {
               </li>
               <li>
                 <a
-                  href="#skills"
+                  href="/#skills"
                   className="hover:text-lime-500 transition-colors"
                 >
                   {t("nav.skills")}
@@ -134,7 +132,7 @@ export function Header() {
               </li>
               <li>
                 <a
-                  href="#about"
+                  href="/#about"
                   className="hover:text-lime-500 transition-colors"
                 >
                   {t("nav.about")}
@@ -143,7 +141,7 @@ export function Header() {
               {isFeatureEnabled("SHOW_CV_NAV_LINK") && (
                 <li>
                   <a
-                    href="#cv"
+                    href="/#cv"
                     className="hover:text-lime-500 transition-colors"
                   >
                     {t("nav.cv")}
@@ -187,7 +185,7 @@ export function Header() {
             <ul className="space-y-4 text-gray-500 dark:text-gray-400">
               <li>
                 <a
-                  href="#work"
+                  href="/#work"
                   className="block py-2 hover:text-lime-500 transition-colors"
                   onClick={closeMobileMenu}
                 >
@@ -196,7 +194,7 @@ export function Header() {
               </li>
               <li>
                 <a
-                  href="#skills"
+                  href="/#skills"
                   className="block py-2 hover:text-lime-500 transition-colors"
                   onClick={closeMobileMenu}
                 >
@@ -205,7 +203,7 @@ export function Header() {
               </li>
               <li>
                 <a
-                  href="#about"
+                  href="/#about"
                   className="block py-2 hover:text-lime-500 transition-colors"
                   onClick={closeMobileMenu}
                 >
@@ -215,7 +213,7 @@ export function Header() {
               {isFeatureEnabled("SHOW_CV_NAV_LINK") && (
                 <li>
                   <a
-                    href="#cv"
+                    href="/#cv"
                     className="block py-2 hover:text-lime-500 transition-colors"
                     onClick={closeMobileMenu}
                   >
