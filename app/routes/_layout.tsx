@@ -5,7 +5,7 @@ import { Header } from "../components/Header";
 export default function Layout() {
   return (
     <>
-      <div className=" inset-0 flex justify-center sm:px-8">
+      <div className=" inset-0 flex justify-center sm:px-8 font-mono">
         <div className="relative flex w-full flex-col max-w-7xl lg:px-8">
           <Header />
           <main className="flex-auto">

@@ -1,7 +1,28 @@
 import type { Route } from "./+types/_index";
 import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
 import { LuMail } from "react-icons/lu";
-import { SiGithub, SiLinkedin } from "react-icons/si";
+import {
+  SiAmazonwebservices,
+  SiDocker,
+  SiDrizzle,
+  SiExpress,
+  SiGit,
+  SiGithub,
+  SiHtml5,
+  SiJavascript,
+  SiLinkedin,
+  SiMongodb,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiPostgresql,
+  SiPrisma,
+  SiReact,
+  SiRedis,
+  SiServerless,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
 import {
   getSoftwareDevExperienceYears,
   getITExperienceYears,
@@ -28,6 +49,20 @@ export default function Home() {
     itTotalYears: getITExperienceYears(),
   };
 
+  // Handle hash navigation when component mounts
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      // Small delay to ensure the page has rendered
+      setTimeout(() => {
+        const element = document.getElementById(hash.substring(1));
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    }
+  }, []);
+
   const skills = t("content:home.skills.items", {
     returnObjects: true,
   }) as Array<{
@@ -47,9 +82,94 @@ export default function Home() {
     ...experienceValues,
   }) as string[];
 
-  const professionalSkills = t("content:about.skills.items", {
-    returnObjects: true,
-  }) as string[];
+  const iconClasses = "h-4 w-4 inline";
+  const professionalSkills = [
+    {
+      key: "JavaScript",
+      label: "JavaScript",
+      icon: <SiJavascript className={iconClasses} />,
+    },
+    {
+      key: "TypeScript",
+      label: "TypeScript",
+      icon: <SiTypescript className={iconClasses} />,
+    },
+    {
+      key: "React",
+      label: "React",
+      icon: <SiReact className={iconClasses} />,
+    },
+    {
+      key: "AWS Cloud",
+      label: "AWS Cloud",
+      icon: <SiAmazonwebservices className={iconClasses} />,
+    },
+    {
+      key: "Serverless Framework",
+      label: "Serverless Framework",
+      icon: <SiServerless className={iconClasses} />,
+    },
+    {
+      key: "Docker",
+      label: "Docker",
+      icon: <SiDocker className={iconClasses} />,
+    },
+    {
+      key: "Next.js",
+      label: "Next.js",
+      icon: <SiNextdotjs className={iconClasses} />,
+    },
+    {
+      key: "Express",
+      label: "Express",
+      icon: <SiExpress className={iconClasses} />,
+    },
+    {
+      key: "Node.js",
+      label: "Node.js",
+      icon: <SiNodedotjs className={iconClasses} />,
+    },
+    {
+      key: "MongoDB",
+      label: "MongoDB",
+      icon: <SiMongodb className={iconClasses} />,
+    },
+    {
+      key: "PostgreSQL",
+      label: "PostgreSQL",
+      icon: <SiPostgresql className={iconClasses} />,
+    },
+    {
+      key: "Prisma",
+      label: "Prisma ORM",
+      icon: <SiPrisma className={iconClasses} />,
+    },
+    {
+      key: "Drizzle",
+      label: "Drizzle ORM",
+      icon: <SiDrizzle className={iconClasses} />,
+    },
+    {
+      key: "HTML",
+      label: "HTML",
+      icon: <SiHtml5 className={iconClasses} />,
+    },
+    {
+      key: "Tailwind CSS",
+      label: "Tailwind CSS",
+      icon: <SiTailwindcss className={iconClasses} />,
+    },
+    {
+      key: "Redis",
+      label: "Redis",
+      icon: <SiRedis className={iconClasses} />,
+    },
+    {
+      key: "Git",
+      label: "Git",
+      icon: <SiGit className={iconClasses} />,
+    },
+  ];
 
   const personalItems = t("content:about.personal.items", {
     returnObjects: true,
@@ -109,10 +229,9 @@ export default function Home() {
     <div className="text-gray-900 dark:text-gray-100 transition-colors duration-300">
       {/* Hero Section */}
       <section className="max-w-6xl mx-auto px-8 py-24 relative overflow-hidden">
-        <div className="absolute -top-32 -right-64 w-[600px] h-[600px] rounded-[43%_57%_70%_30%/53%_44%_56%_47%] bg-gradient-to-br from-red-400 via-cyan-400 to-teal-500 dark:from-red-500 dark:via-yellow-400 dark:to-teal-600 opacity-40 dark:opacity-20 blur-[40px] -z-10 animate-morph" />
         <div className="grid md:grid-cols-[1fr_auto] gap-12 items-center">
           <div className="max-w-2xl">
-            <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
+            <h1 className="font-display text-5xl md:text-6xl leading-tight mb-6">
               {t("content:home.hero.title")}{" "}
               <span className="text-lime-500">
                 {t("content:home.hero.titleHighlight")}
@@ -149,10 +268,10 @@ export default function Home() {
 
       {/* Skills Section */}
       <section id="skills" className="max-w-6xl mx-auto px-8 py-20">
-        <h2 className="text-4xl font-bold mb-12">
+        <h2 className="font-display text-4xl mb-12">
           {t("content:home.skills.title")}
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2  gap-8">
           {skills.map((skill) => (
             <div
               key={skill.title}
@@ -169,7 +288,7 @@ export default function Home() {
 
       {/* Projects Section */}
       <section id="work" className="max-w-6xl mx-auto px-8 py-20">
-        <h2 className="text-4xl font-bold mb-12">
+        <h2 className="font-display text-4xl mb-12">
           {t("content:home.projects.title")}
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
@@ -216,7 +335,9 @@ export default function Home() {
 
       {/* About Section */}
       <section id="about" className="max-w-6xl mx-auto px-8 py-20">
-        <h2 className="text-4xl font-bold mb-12">{t("content:about.title")}</h2>
+        <h2 className="font-display text-4xl mb-12">
+          {t("content:about.title")}
+        </h2>
 
         <div className="grid md:grid-cols-[auto_1fr] gap-12 items-start mb-16">
           <img
@@ -261,7 +382,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Skills */}
+        {/* Skill Pills */}
         <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 mb-8">
           <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100">
             {t("content:about.skills.title")}
@@ -269,10 +390,10 @@ export default function Home() {
           <div className="flex flex-wrap gap-3">
             {professionalSkills.map((skill) => (
               <span
-                key={skill}
+                key={skill.key}
                 className="px-4 py-2 bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-full text-sm text-gray-900 dark:text-gray-100 hover:border-lime-500 hover:text-lime-500 transition-colors"
               >
-                {skill}
+                {skill.icon} {skill.label}
               </span>
             ))}
           </div>
@@ -286,7 +407,10 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-6 text-white/95">
             {personalItems.map((item, index) => (
               <div key={index} className="flex gap-4">
-                <span className="text-3xl" role="img">
+                <span
+                  className="text-4xl text-shadow-lg rounded-2xl bg-lime-50 h-8 w-8 flex items-center justify-center"
+                  role="img"
+                >
                   {item.icon}
                 </span>
                 <p className="leading-relaxed">{item.text}</p>
