@@ -16,7 +16,8 @@
     "startConversation": "Start a Conversation",
     "github": "GitHub",
     "linkedin": "LinkedIn",
-    "viewOnGithub": "View on GitHub"
+    "viewOnGithub": "View on GitHub",
+    "visitWebsite": "Visit Website"
   },
   "theme": {
     "light": "Light",
