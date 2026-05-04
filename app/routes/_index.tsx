@@ -75,6 +75,7 @@ export default function Home() {
   }) as Array<{
     title: string;
     description: string;
+    url?: string;
   }>;
 
   const aboutParagraphs = t("content:about.professional.paragraphs", {
@@ -195,29 +196,24 @@ export default function Home() {
   const projectsWithMeta = [
     {
       ...projects[0],
-      gradientClass:
-        "from-teal-500 to-teal-600 dark:from-teal-600 dark:to-teal-700",
+      image: "/images/rffl-io.png",
     },
     {
       ...projects[1],
-      gradientClass:
-        "from-orange-500 to-orange-600 dark:from-orange-600 dark:to-orange-700",
+      image: "/images/greymatter-jobs.png",
     },
     {
       ...projects[2],
-      gradientClass:
-        "from-purple-500 to-purple-600 dark:from-purple-600 dark:to-purple-700",
       github: "https://github.com/hucki/grouptripper",
       image: "/images/grouptripper-autox300.png",
     },
     {
       ...projects[3],
-      gradientClass:
-        "from-pink-500 to-pink-600 dark:from-pink-600 dark:to-pink-700",
       github: "https://github.com/hucki/necto",
       image: "/images/necto-autox300.png",
     },
   ] as Array<{
+    url: string | undefined;
     title: string;
     description: string;
     gradientClass: string;
@@ -293,7 +289,10 @@ export default function Home() {
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
           {projectsWithMeta.map((project) => (
-            <div
+            <a
+              href={project.url || project.github || "#"}
+              target="_blank"
+              rel="noopener noreferrer"
               key={project.title}
               className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:-translate-y-1 hover:shadow-xl transition-all cursor-pointer"
             >
@@ -304,7 +303,7 @@ export default function Home() {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover mix-blend-multiply dark:mix-blend-soft-light dark:opacity-80"
+                    className="w-full h-full object-cover "
                   />
                 ) : (
                   <div className="text-white text-6xl font-bold opacity-20">
@@ -328,7 +327,7 @@ export default function Home() {
                   </a>
                 )}
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </section>

@@ -35,11 +35,13 @@
       "items": [
         {
           "title": "rffl.io - Raffle Plattform",
-          "description": "Kunden-Aktivierungsplattform für B2C- und B2B-Umgebungen mit Engagement-Mechaniken und Analytics"
+          "description": "Kunden-Aktivierungsplattform für B2C- und B2B-Umgebungen mit Engagement-Mechaniken und Analytics",
+          "url": "https://rffl.io"
         },
         {
           "title": "Job Portal für Senioren",
-          "description": "Spezialisierte Beschäftigungsplattform, die erfahrene Fachkräfte mit auf ihre Expertise zugeschnittenen Möglichkeiten verbindet"
+          "description": "Spezialisierte Beschäftigungsplattform, die erfahrene Fachkräfte mit auf ihre Expertise zugeschnittenen Möglichkeiten verbindet",
+          "url": "https://greymatter-jobs.com"
         },
         {
           "title": "Grouptripper",
