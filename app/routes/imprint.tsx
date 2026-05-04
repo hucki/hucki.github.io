@@ -1,7 +1,7 @@
 import type { Route } from "./+types/imprint";
 import { useTranslation } from "react-i18next";
+import { FaLinkedinIn } from "react-icons/fa6";
 import { SiGithub } from "react-icons/si";
-import { SiLinkedin } from "react-icons/si";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -83,7 +83,7 @@ export default function Imprint() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-gray-600 dark:text-gray-300 hover:text-lime-500 transition-colors group"
               >
-                <SiLinkedin />
+                <FaLinkedinIn />
                 <span className="font-medium">linkedin.com/in/hucki</span>
                 <svg
                   className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity"

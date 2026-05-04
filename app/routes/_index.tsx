@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
 import { LuMail } from "react-icons/lu";
 import {
-  SiAmazonwebservices,
   SiDocker,
   SiDrizzle,
   SiExpress,
@@ -11,7 +10,6 @@ import {
   SiGithub,
   SiHtml5,
   SiJavascript,
-  SiLinkedin,
   SiMongodb,
   SiNextdotjs,
   SiNodedotjs,
@@ -28,6 +26,7 @@ import {
   getITExperienceYears,
 } from "~/utils/experienceCalculator";
 import { isFeatureEnabled } from "~/utils/featureFlags";
+import { FaAws, FaLinkedin } from "react-icons/fa6";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -103,7 +102,7 @@ export default function Home() {
     {
       key: "AWS Cloud",
       label: "AWS Cloud",
-      icon: <SiAmazonwebservices className={iconClasses} />,
+      icon: <FaAws className={iconClasses} />,
     },
     {
       key: "Serverless Framework",
@@ -289,12 +288,9 @@ export default function Home() {
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
           {projectsWithMeta.map((project) => (
-            <a
-              href={project.url || project.github || "#"}
-              target="_blank"
-              rel="noopener noreferrer"
+            <div
               key={project.title}
-              className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:-translate-y-1 hover:shadow-xl transition-all cursor-pointer"
+              className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden hover:-translate-y-1 hover:shadow-xl transition-all"
             >
               <div
                 className={`w-full h-48 bg-gradient-to-br ${project.gradientClass} flex items-center justify-center relative`}
@@ -316,18 +312,28 @@ export default function Home() {
                 <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
                   {project.description}
                 </p>
+                {project.url && (
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-lime-500 hover:text-lime-600 text-sm font-medium  cursor-pointer"
+                  >
+                    {t("ui:buttons.visitWebsite")} →
+                  </a>
+                )}
                 {project.github && (
                   <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center text-lime-500 hover:text-lime-600 text-sm font-medium"
+                    className="inline-flex items-center text-lime-500 hover:text-lime-600 text-sm font-medium  cursor-pointer"
                   >
                     {t("ui:buttons.viewOnGithub")} →
                   </a>
                 )}
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </section>
@@ -363,7 +369,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="flex gap-2 items-center px-6 py-3 bg-transparent text-gray-900 dark:text-gray-100 border-[1.5px] border-gray-200 dark:border-gray-700 rounded hover:border-lime-500 hover:text-lime-500 transition-all font-medium"
               >
-                <SiLinkedin /> {t("ui:buttons.linkedin")}
+                <FaLinkedin /> {t("ui:buttons.linkedin")}
               </a>
             </div>
           </div>
