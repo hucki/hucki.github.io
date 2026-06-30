@@ -10,8 +10,8 @@
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
-    "@react-router/node": "^7.14.2",
-    "@react-router/serve": "^7.14.2",
+    "@react-router/node": "^8.1.0",
+    "@react-router/serve": "^8.1.0",
     "i18next": "^26.0.8",
     "i18next-browser-languagedetector": "^8.2.1",
     "isbot": "^5.1.39",
@@ -20,10 +20,10 @@
     "react-dom": "^19.2.5",
     "react-i18next": "^17.0.6",
     "react-icons": "^5.6.0",
-    "react-router": "^7.14.2"
+    "react-router": "^8.1.0"
   },
   "devDependencies": {
-    "@react-router/dev": "^7.14.2",
+    "@react-router/dev": "^8.1.0",
     "@tailwindcss/vite": "^4.2.4",
     "@types/node": "^25.6",
     "@types/react": "^19.2.14",
